@@ -95,22 +95,22 @@ export const workData = [
     {
         title: 'Oil and Gas',
         description: 'Exploration Geology',
-        bgImage: '/work-1.jpg',
+        bgImage: '/Projects/work-11.jpg',
     },
     {
         title: 'Construction',
         description: 'Material testing and Subsurface Investigation',
-        bgImage: '/work-2.jpg',
+        bgImage: 'Projects/work-21.jpg',
     },
     {
         title: 'Data Science',
         description: 'Technical Data Analysyis',
-        bgImage: '/work-3.5.jpg',
+        bgImage: 'Projects/work-3.51.jpg',
     },
     {
         title: 'Environmental Science',
         description: 'Environmental Geologist, Geochemistry & Hydrogeology',
-        bgImage: '/work-4.jpg',
+        bgImage: 'Projects/work-41.jpg',
     },
 ]
 
