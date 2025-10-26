@@ -43,7 +43,7 @@ const Work2 = (isDark) => {
           </div>
           <div className="p-8 bg-slate-950/40 overflow-y-auto max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/docs/Abridged-Thesis.pdf"
+              fileUrl="/Projects/docs/Abridged-Thesis.pdf"
               className="w-full"
           />
           </div>
@@ -56,7 +56,7 @@ const Work2 = (isDark) => {
           </div>
           <div className="p-8 bg-slate-950/40 overflow-y-auto max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/docs/project.pdf"
+              fileUrl="/Projects/docs/project.pdf"
               className="w-full"
           />
           </div>
