@@ -48,19 +48,19 @@ export default function PdfViewer({ fileUrl, className = "" }) {
   };
 
   return (
-    <div className={`flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 ${className}`}>
+    <div className={`flex flex-col [@media(min-width:768px)]:flex-row [@media(min-width:1685px)]:flex-col items-center justify-center gap-1 [@media(min-width:768px)]:gap-2 ${className}`}>
       {/* Previous Button */}
       <button
         onClick={() => handlePageChange(Math.max(1, pageNumber - 1))}
         disabled={pageNumber <= 1}
-        className="p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0"
+        className="p-1 sm:p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0 hidden [@media(min-width:768px)]:block [@media(min-width:1685px)]:hidden"
         aria-label="Previous page"
       >
-        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
       </button>
 
       {/* PDF Viewer */}
-      <div className="flex flex-col items-center flex-1 w-full min-w-0">
+      <div className="flex flex-col items-center flex-1 w-full min-w-0 max-w-full">
         <div className={`w-full flex justify-center transition-opacity duration-300 min-h-[300px] sm:min-h-[400px] ${isTransitioning ? "opacity-50" : "opacity-100"}`}>
           <Document 
             file={fileUrl} 
@@ -81,6 +81,27 @@ export default function PdfViewer({ fileUrl, className = "" }) {
           <span className="text-slate-300 text-xs sm:text-sm">
             Page {pageNumber} of {numPages || "..."}
           </span>
+          <div className="flex gap-2 [@media(min-width:768px)]:hidden [@media(min-width:1685px)]:flex">
+            {/* Small & Large Screen Previous Button */}
+            <button
+              onClick={() => handlePageChange(Math.max(1, pageNumber - 1))}
+              disabled={pageNumber <= 1}
+              className="p-1 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors"
+              aria-label="Previous page"
+            >
+              <ChevronLeft className="w-4 h-4 text-white" />
+            </button>
+
+            {/* Small & Large Screen Next Button */}
+            <button
+              onClick={() => handlePageChange(Math.min(numPages, pageNumber + 1))}
+              disabled={pageNumber >= numPages}
+              className="p-1 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors"
+              aria-label="Next page"
+            >
+              <ChevronRight className="w-4 h-4 text-white" />
+            </button>
+          </div>
           <a
             href={fileUrl}
             download
@@ -97,10 +118,10 @@ export default function PdfViewer({ fileUrl, className = "" }) {
       <button
         onClick={() => handlePageChange(Math.min(numPages, pageNumber + 1))}
         disabled={pageNumber >= numPages}
-        className="p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0"
+        className="p-1 sm:p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0 hidden [@media(min-width:768px)]:block [@media(min-width:1685px)]:hidden"
         aria-label="Next page"
       >
-        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
       </button>
     </div>
   );
