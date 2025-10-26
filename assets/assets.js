@@ -100,7 +100,7 @@ export const workData = [
     {
         title: 'Construction',
         description: 'Material testing and Subsurface Investigation',
-        bgImage: '/Projects/work-21.jpg',
+        bgImage: '/Projects/work-22.jpg',
     },
     {
         title: 'Data Science',
