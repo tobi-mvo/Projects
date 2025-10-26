@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* stylelint-disable-next-line at-rule-no-unknown */
+@theme {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+  --color-lila: #E9E4F8;
+  
+  --shadow-brutal: 4px 4px 0 #000;
+  --shadow-brutal-light: 4px 4px 0 #fff;
+  
+  --font-family-outfit: "Outfit", sans-serif;
+  --font-family-ovo: "Ovo", serif;
+
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+* {
+  font-family: Outfit;
+}

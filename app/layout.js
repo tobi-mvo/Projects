@@ -1,0 +1,38 @@
+import { Outfit, Ovo } from "next/font/google";
+import "./globals.css";
+//import { useEffect, useState } from "react";//
+import { ThemeProvider } from "./context/ThemeContext";
+
+const outfit = Outfit({
+  subsets: ["latin"], weight: ["400", "500", "600", "700"]
+});
+
+const ovo = Ovo({
+  subsets: ["latin"], weight: ["400"]
+});
+
+export const metadata = {
+  title: "Oluwatobiloba Odukoya - Digital CV ",
+  description: "Digital CV of Tobi Odukoya — concise portfolio, skills, experience, and contact.",
+  keywords: ["Oluwatobiloba Odukoya", "CV", "resume", "portfolio", "geologist", "geochemist", "geotechnical engineer", 
+    "earth science", "GIS"],
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden bg-white dark:bg-darkTheme text-black dark:text-white`}
+      >
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
