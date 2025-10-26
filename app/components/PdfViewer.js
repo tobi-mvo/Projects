@@ -48,19 +48,19 @@ export default function PdfViewer({ fileUrl, className = "" }) {
   };
 
   return (
-    <div className={`flex items-center justify-center gap-2 sm:gap-4 ${className}`}>
-      {/* Previous Button */}
+    <div className={`flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 ${className}`}>
+      {/* Previous Button - Hidden on mobile */}
       <button
         onClick={() => handlePageChange(Math.max(1, pageNumber - 1))}
         disabled={pageNumber <= 1}
-        className="p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0"
+        className="hidden sm:flex p-2 hover:bg-white/10 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors flex-shrink-0"
         aria-label="Previous page"
       >
-        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+        <ChevronLeft className="w-6 h-6 text-white" />
       </button>
 
       {/* PDF Viewer */}
-      <div className="flex flex-col items-center flex-1 min-w-0">
+      <div className="flex flex-col items-center flex-1 w-full min-w-0">
         <div className={`w-full flex justify-center transition-opacity duration-300 min-h-[300px] sm:min-h-[400px] ${isTransitioning ? "opacity-50" : "opacity-100"}`}>
           <Document 
             file={fileUrl} 
