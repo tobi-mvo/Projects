@@ -100,17 +100,17 @@ export const workData = [
     {
         title: 'Construction',
         description: 'Material testing and Subsurface Investigation',
-        bgImage: 'Projects/work-21.jpg',
+        bgImage: '/Projects/work-21.jpg',
     },
     {
         title: 'Data Science',
         description: 'Technical Data Analysyis',
-        bgImage: 'Projects/work-3.51.jpg',
+        bgImage: '/Projects/work-3.51.jpg',
     },
     {
         title: 'Environmental Science',
         description: 'Environmental Geologist, Geochemistry & Hydrogeology',
-        bgImage: 'Projects/work-41.jpg',
+        bgImage: '/Projects/work-41.jpg',
     },
 ]
 
