@@ -43,7 +43,7 @@ const Work2 = (isDark) => {
           </div>
           <div className="p-2 bg-slate-950/40 overflow-y-auto overflow-x-visible max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/Projects/docs/Abridged-Thesis.pdf"
+              fileUrl="/docs/Abridged-Thesis2.pdf"
               className="w-full"
           />
           </div>
@@ -52,14 +52,19 @@ const Work2 = (isDark) => {
       {/* Second PDF */}
       <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden shadow-2xl max-h-[100vh]">
           <div className='bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center px-6 py-4 border-b backdrop-blur border-white/10 dark:bg-none'>
-          <p className="text-slate-600  dark:text-white/70 text-center text-2xl font-medium">Project on Fluid-Rock Thermodynamics</p>
+          <p className="text-slate-600 dark:text-white/70 text-center text-2xl font-medium">Project on Fluid-Rock Thermodynamics</p>
           </div>
           <div className="p-2 bg-slate-950/40 overflow-y-auto overflow-x-visible max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/Projects/docs/project.pdf"
+              fileUrl="/docs/Abridged-project.pdf"
               className="w-full"
           />
           </div>
+      </div>
+
+      <div>
+        <p className="text-slate-600  dark:text-white/70 text-center text-2xl font-medium">3D Structural Geological Model Using <a href="https://www.gempy.org/" target='_blank' rel="noopener noreferrer" className='text-green-700 underline hover:text-green-700/60'>Gempy</a></p>
+        <iframe src="/Cross_Sec.html" frameborder="0" className='w-full p-2 bg-slate-950/40 min-h-[100vh]'></iframe>
       </div>
       </motion.div>
     </motion.div>

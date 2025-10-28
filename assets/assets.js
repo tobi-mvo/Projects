@@ -105,11 +105,11 @@ export const workData = [
     {
         title: 'Data Science',
         description: 'Technical Data Analysyis',
-        bgImage: '/Projects/work-3.51.jpg',
+        bgImage: '/Projects/work-3.1.jpg',
     },
     {
         title: 'Environmental Science',
-        description: 'Environmental Geologist, Geochemistry & Hydrogeology',
+        description: 'Environmental Geology, Geochemistry & Hydrogeology',
         bgImage: '/Projects/work-41.jpg',
     },
 ]
@@ -139,9 +139,9 @@ export const infoList = [
         iconDark: assets.project_icon_dark,
         title: 'Projects',
         description: <>
-         You can find some of my projects in the{' '}
+         You can find some of my past projects in {' '}
         <a href="#work" className="text-green-700 underline hover:text-green-700/60">
-          My Work
+          My Portfolio
         </a>{' '}
         section
         </>

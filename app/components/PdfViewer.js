@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { ChevronLeft, ChevronRight, Download, ExternalLink } from "lucide-react";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 
@@ -105,11 +105,21 @@ export default function PdfViewer({ fileUrl, className = "" }) {
           <a
             href={fileUrl}
             download
-            className="p-2 hover:bg-blue-600/20 rounded-lg transition-colors flex items-center gap-2 text-blue-400 hover:text-blue-300"
+            className="p-2 hover:bg-blue-600/20 rounded-lg transition-colors flex items-center gap-2 text-green-700 hover:text-green-500 dark:text-blue-400 dark:hover:text-blue-300"
             aria-label="Download PDF"
           >
             <Download className="w-4 h-4" />
             <span className="text-xs sm:text-sm hidden sm:inline">Download</span>
+          </a>
+          <a
+            href={fileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 hover:bg-blue-600/20 rounded-lg transition-colors flex items-center gap-2 text-green-700 hover:text-green-500 dark:text-blue-400 dark:hover:text-blue-300"
+            aria-label="View PDF in browser"
+          >
+            <ExternalLink className="w-4 h-4" />
+            <span className="text-xs sm:text-sm hidden sm:inline">View</span>
           </a>
         </div>
       </div>
