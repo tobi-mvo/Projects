@@ -43,7 +43,7 @@ const Work2 = (isDark) => {
           </div>
           <div className="p-2 bg-slate-950/40 overflow-y-auto overflow-x-visible max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/docs/Abridged-Thesis2.pdf"
+              fileUrl="/Projects/docs/Abridged-Thesis2.pdf"
               className="w-full"
           />
           </div>
@@ -56,7 +56,7 @@ const Work2 = (isDark) => {
           </div>
           <div className="p-2 bg-slate-950/40 overflow-y-auto overflow-x-visible max-h-[calc(100vh-88px)]">
           <PdfViewer
-              fileUrl="/docs/Abridged-project.pdf"
+              fileUrl="/Projects/docs/Abridged-project.pdf"
               className="w-full"
           />
           </div>
@@ -64,7 +64,7 @@ const Work2 = (isDark) => {
 
       <div>
         <p className="text-slate-600  dark:text-white/70 text-center text-2xl font-medium">3D Structural Geological Model Using <a href="https://www.gempy.org/" target='_blank' rel="noopener noreferrer" className='text-green-700 underline hover:text-green-700/60'>Gempy</a></p>
-        <iframe src="/Cross_Sec.html" frameborder="0" className='w-full p-2 bg-slate-950/40 min-h-[100vh]'></iframe>
+        <iframe src="/Projects/Cross_Sec.html" frameborder="0" className='w-full p-2 bg-slate-950/40 min-h-[100vh]'></iframe>
       </div>
       </motion.div>
     </motion.div>

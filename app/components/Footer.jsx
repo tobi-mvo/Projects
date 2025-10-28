@@ -11,7 +11,12 @@ const Footer = ({isDark}) => {
             */}
 
             <div className='w-max flex items-center gap- mx-auto'>
-                <Image src={isDark ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>todukoya50@gmail.com
+                <Image src={isDark ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>
+                <a href="mailto:todukoya50@gmail.com"
+                className="hover:text-blue-600 hover:underline"
+                >               
+                    todukoya50@gmail.com
+                </a>
             </div>
         </div>
 
