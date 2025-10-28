@@ -105,7 +105,7 @@ export const workData = [
     {
         title: 'Data Science',
         description: 'Technical Data Analysyis',
-        bgImage: '/Projects/work-3.1.jpg',
+        bgImage: '/Projects/work-31.jpg',
     },
     {
         title: 'Environmental Science',
