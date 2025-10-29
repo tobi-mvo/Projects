@@ -24,7 +24,7 @@ export const metadata = {
     height: 630,
     alt: "Logo of My Site",
   },
-],*/
+],
 };
 
 export const viewport = {
