@@ -13,9 +13,17 @@ const ovo = Ovo({
 
 export const metadata = {
   title: "Oluwatobiloba Odukoya - Digital CV ",
-  description: "Digital CV of Tobi Odukoya — concise portfolio, skills, experience, and contact.",
+  description: "Digital CV of Tobi Odukoya — A brief description of what I do.",
   keywords: ["Oluwatobiloba Odukoya", "CV", "resume", "portfolio", "geologist", "geochemist", "geotechnical engineer", 
     "earth science", "GIS"],
+  images: [
+  {
+    url: "/assests/profile-img.png",   // relative path from public/
+    width: 1200,
+    height: 630,
+    alt: "Logo of My Site",
+  },
+],
 };
 
 export const viewport = {
