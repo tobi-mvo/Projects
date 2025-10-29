@@ -17,14 +17,20 @@ export const metadata = {
   description: "Digital CV of Tobi Odukoya — A brief description of what I do.",
   keywords: ["Oluwatobiloba Odukoya", "CV", "resume", "portfolio", "geologist", "geochemist", "geotechnical engineer", 
     "earth science", "GIS"],
-  images: [
-  {
-    url: "/Projects/header.jpg",   // relative path from public/
-    width: 1200,
-    height: 630,
-    alt: "Logo of My Site",
+  openGraph: {
+    url: "https://tobi-mvo.github.io/Projects/",
+    type: "website",
+    locale: "en_DE",
+    images: [
+      {
+        url: "https://tobi-mvo.github.io/Projects/header.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Logo of My Site",
+        type: "image/jpeg",
+      },
+    ],
   },
-],
 };
 
 export const viewport = {
