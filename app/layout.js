@@ -17,9 +17,9 @@ export const metadata = {
   description: "Digital CV of Tobi Odukoya — A brief description of what I do.",
   keywords: ["Oluwatobiloba Odukoya", "CV", "resume", "portfolio", "geologist", "geochemist", "geotechnical engineer", 
     "earth science", "GIS"],
-  /*images: [
+  images: [
   {
-    url: {assets.profile_img},   // relative path from public/
+    url: "/Projects/header.jpg",   // relative path from public/
     width: 1200,
     height: 630,
     alt: "Logo of My Site",
