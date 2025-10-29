@@ -52,7 +52,7 @@ const Work2 = (isDark) => {
 
         {/* Second PDF */}
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden shadow-2xl max-h-[100vh]">
-          <div className='bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center px-6 py-4 border-b backdrop-blur border-white/10 dark:bg-none'>
+          <div className="bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center px-6 py-4 border-b backdrop-blur border-white/10 dark:bg-none">
             <p className="text-slate-600 dark:text-white/70 text-center text-2xl font-medium">Project on Fluid-Rock Thermodynamics </p>
           </div>
           <div className="p-2 bg-slate-950/40 overflow-y-auto overflow-x-visible max-h-[calc(100vh-88px)]">
