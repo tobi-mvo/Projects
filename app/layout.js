@@ -2,6 +2,7 @@ import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 //import { useEffect, useState } from "react";//
 import { ThemeProvider } from "./context/ThemeContext";
+import { assets } from "@/assets/assets";
 
 const outfit = Outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
@@ -16,14 +17,14 @@ export const metadata = {
   description: "Digital CV of Tobi Odukoya — A brief description of what I do.",
   keywords: ["Oluwatobiloba Odukoya", "CV", "resume", "portfolio", "geologist", "geochemist", "geotechnical engineer", 
     "earth science", "GIS"],
-  images: [
+  /*images: [
   {
-    url: "/assests/profile-img.png",   // relative path from public/
+    url: {assets.profile_img},   // relative path from public/
     width: 1200,
     height: 630,
     alt: "Logo of My Site",
   },
-],
+],*/
 };
 
 export const viewport = {
